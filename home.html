@@ -36,18 +36,57 @@
             <form action="{{url_for('predict')}}"method="POST" class="container">
                 <h1>Breast Cancer Prediction</h1>
                 <p>Please Fill in the Required Details :</p><br>
-         First value :  <input type="text" name='a' placeholder="" required="required"><br>
-         Second value : <input type="text" name='b' placeholder="" required="required"><br>
-         Third value :  <input type="text" name='c' placeholder="" required="required"><br>
-         Fourth value : <input type="text" name='d' placeholder="" required="required"><br>
-         Fifth value :  <input type="text" name='e' placeholder="" required="required"><br>
-         Sixth value :  <input type="text" name='f' placeholder="" required="required"><br>
-         Seventh value : <input type="text" name='g' placeholder="" required="required"><br>
-         Eigth value : <input type="text" name='h' placeholder="" required="required"><br>
-         Ninth value :  <input type="text" name='i' placeholder="" required="required"><br>
-         Tenth value :  <input type="text" name='j' placeholder="" required="required"><br>
-         <button type="submit" class="btn">PREDICT</button>
-     </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+              
+        <Table Border="0">
+          <TR>
+          <TD>First Value</TD>
+          <TD><Input type="Text" Name="First Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Second Value</TD>
+          <TD><Input type="Text" Name="Second Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Third Value</TD>
+          <TD><Input type="Text" Name="Third Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>DFourth Value</TD>
+          <TD><Input type="Text" Name="Fourth Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Fifth Value</TD>
+          <TD><Input type="Text" Name="Fifth Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Sixth Vale</TD>
+          <TD><Input type="Text" Name="Sixth Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Seventh Value</TD>
+          <TD><Input type="Text" Name="Seventh Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Eighth Value</TD>
+          <TD><Input type="Text" Name="Eighth Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Ninth Value</TD>
+          <TD><Input type="Text" Name="Ninth Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+          <TR>
+          <TD>Tenth Value</TD>
+          <TD><Input type="Text" Name="Tenth Value" Placeholder="-" Required="Required"></TD>
+          </TR>
+        </Table>
+        
+        <Button type="Submit" Class="btn">Predict</Button>     
+    
+      </form>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+              
+      {{ prediction_text }}
+              
+ </div>
+</body>
 </html>
